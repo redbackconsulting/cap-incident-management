@@ -1,6 +1,6 @@
 using { sap.capire.incidents as my } from '../db/schema.cds';
-@path: '/service/committeeManagement'
-@requires: 'authenticated-user'
+@path: '/service/incident-management'
+@requires: 'support'
 service ProcessorService {
     @odata.draft.enabled
     entity Incidents as projection on my.Incidents;
